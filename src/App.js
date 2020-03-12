@@ -1,8 +1,15 @@
 import React from 'react';
 import Navbar from './navbar/Navbar';
+import FormField from './formfield/Formfield';
 
 const App = () => {
-	return <Navbar />;
+	return (
+	<>
+	<Navbar />
+	<FormField label="Name" type="text" placeholder="e.g Alex Smith" />
+    <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
+	</>
+	)
 };
 
 export default App;
